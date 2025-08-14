@@ -61,7 +61,7 @@ pipeline {
 
     stage('SonarCloud Analysis') {
       steps {
-        withCredentials([string(credentialsId: 'sonar-token', variable: 'SONAR_TOKEN')]) {
+        withCredentials([string(credentialsId: 'sonarcloud-token', variable: 'SONAR_TOKEN')]) {
           sh """
             mvn -B sonar:sonar \
               -Dsonar.organization=${SONAR_ORG} \
