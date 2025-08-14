@@ -11,7 +11,7 @@ pipeline {
     GIT_URL      = 'https://github.com/luckysuie/luckyspringpetclinic.git'
 
     // SonarCloud
-    SONAR_ORG    = 'Vnitesh26'         // your SonarCloud organization
+    SONAR_ORG    = 'vnitesh26'         // your SonarCloud organization
     SONAR_PROJECT= 'jenkinsproject'    // your SonarCloud project key
     SONAR_HOST   = 'https://sonarcloud.io'
 
