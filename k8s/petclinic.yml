@@ -15,7 +15,7 @@ spec:
         app: luckywebapp
     spec:
       imagePullSecrets:
-        - name: acr-secret  # Ensure this matches your Kubernetes secret name for ACR
+        - name: acr-auth  # Ensure this matches your Kubernetes secret name for ACR
       containers:
       - name: luckywebapp
         image: luckyregistry1n.azurecr.io/my-app-image:latest
